@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
 
-export const About = () => {
+export const Form = () => {
   return <Fragment>Form page</Fragment>;
 };
