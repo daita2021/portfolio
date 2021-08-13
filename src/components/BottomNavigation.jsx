@@ -6,13 +6,15 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BurstModeIcon from "@material-ui/icons/BurstMode";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
+    position: "fixed",
+    bottom: 0,
     width: "100%",
     margin: "0 auto",
-    position: "absolute",
-    bottom: 0,
+    background: "#efefef",
   },
 });
 
@@ -29,10 +31,10 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="About" icon={<AccountCircleIcon />} />
-      <BottomNavigationAction label="Form" icon={<ContactMailIcon />} />
-      <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} />
-      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} />
+      <BottomNavigationAction label="About" icon={<AccountCircleIcon />} component={Link} to="/about" />
+      <BottomNavigationAction label="Form" icon={<ContactMailIcon />} component={Link} to="/form" />
+      <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener" />
+      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} href="http://portfoliotam.starfree.jp/" target="_blank" rel="noopener" />
     </BottomNavigation>
   );
 }
