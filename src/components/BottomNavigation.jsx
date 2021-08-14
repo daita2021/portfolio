@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     width: "100%",
     margin: "0 auto",
     background: "#efefef",
+    boxShadow: "0 -1px 2px #ddd",
   },
 });
 
@@ -31,10 +32,10 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
+      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/" />
       <BottomNavigationAction label="About" icon={<AccountCircleIcon />} component={Link} to="/about" />
       <BottomNavigationAction label="Form" icon={<ContactMailIcon />} component={Link} to="/form" />
-      <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener" />
-      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} href="http://portfoliotam.starfree.jp/" target="_blank" rel="noopener" />
+      <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener noreferrer" />
     </BottomNavigation>
   );
 }
