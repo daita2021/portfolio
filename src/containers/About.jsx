@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
 
 export const About = () => {
-  return <Fragment>About</Fragment>;
+  return (
+    <Fragment>
+      <h2>About</h2>
+    </Fragment>
+  );
 };

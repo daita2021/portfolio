@@ -4,11 +4,9 @@ const useStyles = makeStyles({
   header: {
     display: "flex",
     alignItems: "center",
-    height: 50,
+    height: 40,
   },
-  title: {
-    margin: 0,
-  },
+  title: {},
 });
 
 export const Header = () => {

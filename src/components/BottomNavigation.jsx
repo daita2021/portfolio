@@ -13,8 +13,10 @@ const useStyles = makeStyles({
     position: "fixed",
     bottom: 0,
     width: "100%",
+    height: 50,
     margin: "0 auto",
     background: "#efefef",
+    opacity: 0.9,
     boxShadow: "0 -1px 2px #ddd",
   },
 });

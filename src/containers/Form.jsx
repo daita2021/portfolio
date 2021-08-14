@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
 
 export const Form = () => {
-  return <Fragment>Form</Fragment>;
+  return (
+    <Fragment>
+      <h2>Form</h2>
+    </Fragment>
+  );
 };
