@@ -1,5 +1,5 @@
 import "./Sidebar.css";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HtmlCss } from "../containers/Html_css";
 import { Js } from "../containers/Js";
 import { ReactPage } from "../containers/React_pages";
