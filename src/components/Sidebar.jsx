@@ -23,10 +23,10 @@ export const Sidebar = () => {
             <Link to="/works/js">JavaScript</Link>
           </li>
           <li>
-            <Link to="works/react">React</Link>
+            <Link to="/works/react">React</Link>
           </li>
           <li>
-            <Link to="/works/rails">Rails</Link>
+            <Link to="/works/rails">Ruby on Rails</Link>
           </li>
           <li>
             <a href="http://portfoliotam.starfree.jp/" target="_blank" rel="noopener noreferrer">

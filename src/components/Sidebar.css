@@ -5,7 +5,7 @@
   width: 140px;
   transform: translateX(calc(100vw - 50px));
   transition: 200ms ease-in-out;
-  background: linear-gradient(180deg, #2d3077 0%, #22245d 100%);
+  background: linear-gradient(180deg, #3e419a 0%, #22245d 100%);
 }
 .sidebarInner {
   margin: 0;
@@ -29,6 +29,23 @@
   text-decoration: none;
   white-space: nowrap;
 }
+
+.sidebarInner li:nth-of-type(1) {
+  background: url(../images/logo_htmlcss.png) no-repeat 5px center/ 40px;
+}
+.sidebarInner li:nth-of-type(2) {
+  background: url(../images/logo_js.png) no-repeat 14px center/ 22px;
+}
+.sidebarInner li:nth-of-type(3) {
+  background: url(../images/logo_react.png) no-repeat 10px center/ 30px;
+}
+.sidebarInner li:nth-of-type(4) {
+  background: url(../images/logo_rails.png) no-repeat 2px center/ 46px;
+}
+.sidebarInner li:nth-of-type(5) {
+  background: url(../images/logo_school.png) no-repeat 12px center/ 24px;
+}
+
 input[type="checkbox"]:checked ~ #sidebar {
   transform: translateX(calc(100vw - 140px));
 }
@@ -38,20 +55,23 @@ input[type="checkbox"] {
   display: none;
 }
 .sidebarToggle {
-  padding: 10px;
+  padding: 13px 10px;
   margin-right: 4px;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  background-color: #900;
+  border-radius: 48%;
+  box-shadow: 0 0 2px #aaa;
   z-index: 100;
-  bottom: 260px;
+  bottom: 264px;
   right: 0;
   width: 40px;
 }
 .stick {
   transition: all 0.1s;
-  height: 3px;
-  width: 100%;
-  background-color: #111;
+  height: 2px;
+  width: 90%;
+  background-color: #eee;
 }
 .part-1 {
   position: relative;
@@ -64,12 +84,17 @@ input[type="checkbox"] {
   position: relative;
   margin-top: 3px;
 }
-input[type="checkbox"]:checked ~ .sidebarToggle > .part-2 {
+
+input[type="checkbox"]:checked ~ .sidebarToggle > .part-1 {
   transition: all 0.1s;
+  width: 100%;
+}
+input[type="checkbox"]:checked ~ .sidebarToggle > .part-2 {
+  transition: all 0.2s;
   width: 110%;
 }
 
 input[type="checkbox"]:checked ~ .sidebarToggle > .part-3 {
-  transition: all 0.1s;
+  transition: all 0.2s;
   width: 120%;
 }

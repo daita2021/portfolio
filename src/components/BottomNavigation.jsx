@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import HomeIcon from "@material-ui/icons/Home";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BurstModeIcon from "@material-ui/icons/BurstMode";
@@ -34,9 +34,9 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
+      <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} to="/home" />
       <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/works" />
-      <BottomNavigationAction label="About" icon={<AccountCircleIcon />} component={Link} to="/about" />
-      <BottomNavigationAction label="Form" icon={<ContactMailIcon />} component={Link} to="/form" />
+      <BottomNavigationAction label="About" icon={<ContactMailIcon />} component={Link} to="/about" />
       <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener noreferrer" />
     </BottomNavigation>
   );

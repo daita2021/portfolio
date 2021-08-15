@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 
-export const Form = () => {
+export const Home = () => {
   return (
     <Fragment>
-      <h2>Form</h2>
+      <h2>Home</h2>
     </Fragment>
   );
 };

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // components
 import { About } from "./containers/About";
-import { Form } from "./containers/Form";
+import { Home } from "./containers/Home";
 import { Works } from "./containers/Works";
 import { Header } from "./components/Header";
 // materialUI components
@@ -21,8 +21,8 @@ function App() {
         <Route exact path="/about">
           <About />
         </Route>
-        <Route exact path="/form">
-          <Form />
+        <Route exact path="/home">
+          <Home />
         </Route>
       </Switch>
 
