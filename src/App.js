@@ -13,8 +13,9 @@ function App() {
   return (
     <Router>
       <Header />
+
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/works">
           <Works />
         </Route>
         <Route exact path="/about">

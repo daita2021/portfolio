@@ -34,7 +34,7 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/" />
+      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/works" />
       <BottomNavigationAction label="About" icon={<AccountCircleIcon />} component={Link} to="/about" />
       <BottomNavigationAction label="Form" icon={<ContactMailIcon />} component={Link} to="/form" />
       <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener noreferrer" />
