@@ -247,6 +247,7 @@ img {
 /* ---reset */
 
 body {
+  padding-top: 40px;
   background: #f9f9f9;
   color: #111;
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

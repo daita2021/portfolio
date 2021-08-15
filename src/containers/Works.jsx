@@ -3,7 +3,7 @@ import { Sidebar } from "../components/Sidebar";
 export const Works = () => {
   return (
     <>
-      <h2>Works</h2>
+      <h2>WORKS</h2>
       <Sidebar />
     </>
   );

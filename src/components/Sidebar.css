@@ -34,7 +34,7 @@
   background: url(../images/logo_htmlcss.png) no-repeat 5px center/ 40px;
 }
 .sidebarInner li:nth-of-type(2) {
-  background: url(../images/logo_js.png) no-repeat 14px center/ 22px;
+  background: url(../images/logo_js.png) no-repeat 14px 3px / 22px;
 }
 .sidebarInner li:nth-of-type(3) {
   background: url(../images/logo_react.png) no-repeat 10px center/ 30px;
@@ -43,7 +43,7 @@
   background: url(../images/logo_rails.png) no-repeat 2px center/ 46px;
 }
 .sidebarInner li:nth-of-type(5) {
-  background: url(../images/logo_school.png) no-repeat 12px center/ 24px;
+  background: url(../images/logo_school.png) no-repeat 13px center/ 24px;
 }
 
 input[type="checkbox"]:checked ~ #sidebar {
