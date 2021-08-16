@@ -47,12 +47,12 @@ h2 {
 }
 
 @media (max-width: 767px) {
-  .text1 {
+  .txt1 {
     font-size: 42px;
   }
 }
 @media (max-width: 549px) {
-  .text1 {
+  .txt1 {
     font-size: 30px;
     font-weight: 500;
   }
