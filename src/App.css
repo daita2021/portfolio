@@ -22,28 +22,28 @@ h2 {
 
 /* 共通box */
 .commonBox {
-  text-shadow: 2px 2px 2px #000;
   height: calc(100vh - 90px);
-  padding-top: 24vh;
-  text-align: center;
-  /* background: url() no-repeat center top/cover; */
 }
 
 /* HOME テキスト */
 .txt1 {
+  text-align: center;
   font-size: 54px;
+  text-shadow: 2px 2px 2px #000;
   font-family: "Courgette", cursive;
   letter-spacing: 2px;
+  padding-top: 24vh;
   font-weight: 500;
   color: #fff;
   background: #0f214e;
 }
 
 .txt2 {
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
   font-weight: 300;
   font-size: 32px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 24vh 40px 0 40px;
   background: #eee;
 }
 
