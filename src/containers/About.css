@@ -1,0 +1,52 @@
+.contact {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 24px;
+  font-size: 32px;
+  color: #fff;
+}
+
+.formWrapper {
+  padding-top: 10vh;
+  background: #091532;
+}
+.formBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formBox input,
+textarea {
+  border: 2px solid #cc6666;
+  border-radius: 4px;
+}
+
+.formBox [type="text"],
+[type="email"],
+textarea {
+  margin: 20px auto;
+  padding: 10px;
+  display: block;
+  width: 300px;
+  color: #fff;
+}
+
+textarea {
+  padding-bottom: 100px;
+}
+
+.formBtn {
+  width: 180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.formBtn input {
+  padding: 10px;
+  background: #cc6666;
+}
