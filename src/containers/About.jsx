@@ -8,7 +8,7 @@ export const About = () => {
       <div className="commonBox formWrapper">
         <h3 className="contact">Contact</h3>
         <div className="formBox">
-          <form name="contact" action="/" method="post" netlify="true">
+          <form name="contact" action="" method="POST" data-netlify="true">
             <input type="text" name="name" required autoComplete="name" placeholder="Name" />
 
             <input type="email" name="email" required autoComplete="email" placeholder="E-mail" />
