@@ -6,7 +6,10 @@ import HomeIcon from "@material-ui/icons/Home";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import BurstModeIcon from "@material-ui/icons/BurstMode";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { About } from "../containers/About";
+import { Home } from "../containers/Home";
+import { Works } from "../containers/Works";
 
 const useStyles = makeStyles({
   root: {
@@ -26,18 +29,32 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
 
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} to="/" />
-      <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/works" />
-      <BottomNavigationAction label="About" icon={<ContactMailIcon />} component={Link} to="/about" />
-      <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener noreferrer" />
-    </BottomNavigation>
+    <Router>
+      <BottomNavigation
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        showLabels
+        className={classes.root}
+      >
+        <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} to="/" />
+        <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} exact to="/works" />
+        <BottomNavigationAction label="About" icon={<ContactMailIcon />} component={Link} to="/about" />
+        <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener noreferrer" />
+      </BottomNavigation>
+
+      <Switch>
+        <Route exact path="/works">
+          <Works />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
