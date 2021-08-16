@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     height: 40,
+    backgroundImage: "linear-gradient(65.5deg, #3dcaca -15%, #2d3077 70%)",
   },
 });
 

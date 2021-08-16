@@ -247,7 +247,7 @@ img {
 /* ---reset */
 
 body {
-  padding-top: 40px;
+  padding: 40px 0 50px; /* header nav分 */
   background: #f9f9f9;
   color: #111;
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

@@ -1,9 +1,8 @@
-header {
-  background-image: linear-gradient(65.5deg, #3dcaca -15%, #2d3077 70%);
-}
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 h1 {
   background: url(./images/logo_transparent.png) no-repeat left 3px / contain;
+  letter-spacing: 1px;
   padding-left: 36px;
   font-weight: 500;
   color: #fff;
@@ -13,9 +12,48 @@ h1 {
 h2 {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 46px;
   color: #fff;
-  font-weight: 450;
-  padding: 8px 12px;
-  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 9px 2px 0;
+  border-bottom: 1px solid #fff;
+}
+
+/* HOME キーヴィジュアル */
+.keyVisual {
+  text-shadow: 2px 2px 2px #000;
+  height: calc(100vh - 90px);
+  padding-top: 30vh;
+  text-align: center;
+  /* background: url() no-repeat center top/cover; */
+}
+
+.txt1 {
+  font-size: 54px;
+  font-family: "Courgette", cursive;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #fff;
+  background: #0f214e;
+}
+
+.txt2 {
+  font-weight: 300;
+  font-size: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #eee;
+}
+
+@media (max-width: 767px) {
+  .text1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 549px) {
+  .text1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
 }

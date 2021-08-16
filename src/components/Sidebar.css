@@ -5,7 +5,7 @@
   width: 140px;
   transform: translateX(calc(100vw - 50px));
   transition: 200ms ease-in-out;
-  background: linear-gradient(180deg, #3e419a 0%, #22245d 100%);
+  background: linear-gradient(180deg, #2d3077 0%, #1f2053 100%);
 }
 .sidebarInner {
   margin: 0;
@@ -16,7 +16,7 @@
   font-size: 14px;
   color: #fff;
   /* text-transform: uppercase; */
-  padding: 12px;
+  padding: 15px 12px;
   box-sizing: border-box;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -63,7 +63,7 @@ input[type="checkbox"] {
   border-radius: 48%;
   box-shadow: 0 0 2px #aaa;
   z-index: 100;
-  bottom: 264px;
+  bottom: 280px;
   right: 0;
   width: 40px;
 }
