@@ -2,8 +2,8 @@ import { Article } from "../components/Article";
 import "./Works.css";
 
 // images
-import TestImg from "../images/logo_js.png";
-import TestImg2 from "../images/logo_htmlcss.png";
+import TestImg from "../images/icon_html.svg";
+import TestImg2 from "../images/icon_css.svg";
 
 export const HtmlCss = () => {
   return (
