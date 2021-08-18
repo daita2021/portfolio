@@ -1,0 +1,24 @@
+.worksTitle {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  min-width: 120px;
+  text-align: center;
+  padding: 4px 12px;
+  transform: skew(-16deg);
+  position: fixed;
+  top: 46px;
+  left: 10px;
+}
+
+.worksFlex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+@media (max-width: 600px) {
+  .worksFlex {
+    justify-content: space-around;
+  }
+}
