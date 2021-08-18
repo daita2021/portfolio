@@ -1,14 +1,13 @@
 .contact {
   text-align: center;
+  padding-top: 20px;
   letter-spacing: 2px;
   font-weight: 400;
-  padding: 24px;
   font-size: 32px;
   color: #fff;
 }
 
 .formWrapper {
-  padding-top: 10vh;
   background: #091532;
 }
 .formBox {

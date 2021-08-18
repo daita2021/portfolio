@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap");
 h1 {
   background: url(./images/logo_transparent.png) no-repeat left 3px / contain;
   letter-spacing: 1px;
@@ -22,14 +21,25 @@ h2 {
 /* 共通box */
 .commonBox {
   min-height: calc(100vh - 90px);
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .flex {
+    justify-content: space-around;
+  }
 }
 
 /* HOME テキスト */
 .txt1 {
   text-align: center;
   font-size: 54px;
+  font-family: "Neuton", serif;
   text-shadow: 2px 2px 2px #000;
-  font-family: "Courgette", cursive;
   letter-spacing: 2px;
   padding-top: 28vh;
   font-weight: 500;
@@ -56,8 +66,7 @@ h2 {
 }
 @media (max-width: 549px) {
   .txt1 {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 32px;
   }
   .txt2 {
     font-size: 18px;

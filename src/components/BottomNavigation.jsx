@@ -19,7 +19,6 @@ const useStyles = makeStyles({
     height: 50,
     margin: "0 auto",
     background: "#efefef",
-    opacity: 0.9,
     boxShadow: "0 -1px 2px #ddd",
   },
 });
@@ -39,13 +38,13 @@ export default function SimpleBottomNavigation() {
         className={classes.root}
       >
         <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link} to="/" />
-        <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/works" />
+        <BottomNavigationAction label="Works" icon={<BurstModeIcon />} component={Link} to="/works/htmlcss" />
         <BottomNavigationAction label="About" icon={<ContactMailIcon />} component={Link} to="/about" />
         <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} href="https://github.com/daita2021" target="_blank" rel="noopener noreferrer" />
       </BottomNavigation>
 
       <Switch>
-        <Route exact path="/works">
+        <Route exact path="/works/htmlcss">
           <Works />
         </Route>
         <Route exact path="/about">
@@ -53,6 +52,15 @@ export default function SimpleBottomNavigation() {
         </Route>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/works/js">
+          <Works />
+        </Route>
+        <Route exact path="/works/react">
+          <Works />
+        </Route>
+        <Route exact path="/works/rails">
+          <Works />
         </Route>
       </Switch>
     </Router>
