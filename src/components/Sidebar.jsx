@@ -17,7 +17,7 @@ export const Sidebar = () => {
       <div id="sidebar">
         <ul className="sidebarInner">
           <li>
-            <Link to="/works/htmlcss">HTML/CSS</Link>
+            <Link to="/works/htmlcss">HTML&CSS</Link>
           </li>
           <li>
             <Link to="/works/js">JavaScript</Link>

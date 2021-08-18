@@ -21,10 +21,15 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 20 20",
     width: 280,
     height: 250,
+    padding: 10,
     cursor: "pointer",
   },
   articleTitle: {
     marginBottom: 10,
+  },
+  articleImg: {
+    width: 240,
+    height: 200,
   },
 }));
 
@@ -49,7 +54,7 @@ export const Article = (props) => {
       <div className={classes.articleBox} onClick={handleOpen}>
         <h3 className={classes.articleTitle}>{title}</h3>
         <p>
-          <img src={imgUrl} alt="" width={240} height={200} />
+          <img className={classes.articleImg} src={imgUrl} alt="" />
         </p>
       </div>
       <Modal

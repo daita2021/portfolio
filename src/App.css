@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap");
+
 h1 {
   background: url(./images/logo_transparent.png) no-repeat left 3px / contain;
   letter-spacing: 1px;
@@ -24,20 +25,10 @@ h2 {
   padding: 10px;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (max-width: 600px) {
-  .flex {
-    justify-content: space-around;
-  }
-}
-
 /* HOME テキスト */
 .txt1 {
   text-align: center;
-  font-size: 54px;
+  font-size: 60px;
   font-family: "Neuton", serif;
   text-shadow: 2px 2px 2px #000;
   letter-spacing: 2px;
@@ -49,16 +40,16 @@ h2 {
 
 .txt2 {
   text-align: center;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 0 0 1px #000;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 30px;
   padding: 28vh 40px 0 40px;
   background: #eee;
 }
 
 @media (max-width: 767px) {
   .txt1 {
-    font-size: 42px;
+    font-size: 48px;
   }
   .txt2 {
     font-size: 24px;
@@ -66,7 +57,7 @@ h2 {
 }
 @media (max-width: 549px) {
   .txt1 {
-    font-size: 32px;
+    font-size: 42px;
   }
   .txt2 {
     font-size: 18px;
