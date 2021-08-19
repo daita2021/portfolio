@@ -8,7 +8,7 @@ import TestImg2 from "../images/icon_css.svg";
 export const Js = () => {
   return (
     <>
-      <h3 className="worksTitle" style={{ background: "#ee3", color: "#333" }}>
+      <h3 className="worksTitle" style={{ background: "#ee3", color: "#111" }}>
         JavaScript
       </h3>
       <div className="commonBox worksFlex">

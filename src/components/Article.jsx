@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -14,27 +15,50 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: "1px solid #000",
     boxShadow: theme.shadows[20],
-    padding: theme.spacing(4, 4, 4),
-    maxWidth: 960,
+    padding: theme.spacing(2, 3, 2),
+    maxWidth: 600,
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 400,
+    },
+    "& img": {
+      marginBottom: 10,
+    },
+    "& p": {
+      marginBottom: 2,
+    },
   },
   articleBox: {
-    margin: "0 20 20",
-    width: 280,
+    marginRight: 10,
+    marginBottom: 10,
+    width: 300,
     height: 250,
     padding: 10,
     cursor: "pointer",
+    [theme.breakpoints.up("md")]: {
+      width: 420,
+      height: 380,
+    },
   },
   articleTitle: {
     marginBottom: 10,
   },
   articleImg: {
     width: 240,
-    height: 200,
+    height: 150,
+    [theme.breakpoints.up("md")]: {
+      width: 360,
+      height: 220,
+    },
+  },
+  btnWrapper: {
+    display: "flex",
+    justifyContent: "flex-end",
   },
 }));
 
 export const Article = (props) => {
   const title = props.title;
+  const description = props.description;
   const imgUrl = props.imgUrl;
   const siteUrl = props.siteUrl;
 
@@ -71,11 +95,16 @@ export const Article = (props) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+            <h3>{title}</h3>
+            <p>{description}</p>
             <a href={siteUrl} target="_blank" rel="noopener noreferrer">
-              <h3>{title}</h3>
-              <p id="transition-modal-description">react-transition-group animates me.</p>
               <img src={imgUrl} alt="" />
             </a>
+            <div className={classes.btnWrapper}>
+              <Button variant="contained" onClick={handleClose} className={classes.closeBtn}>
+                Close
+              </Button>
+            </div>
           </div>
         </Fade>
       </Modal>

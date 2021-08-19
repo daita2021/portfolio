@@ -8,7 +8,7 @@ import TestImg2 from "../images/icon_css.svg";
 export const ReactPage = () => {
   return (
     <>
-      <h3 className="worksTitle" style={{ background: "#1bf", color: "#111" }}>
+      <h3 className="worksTitle" style={{ background: "#1df", color: "#000" }}>
         React
       </h3>
       <div className="commonBox worksFlex">
