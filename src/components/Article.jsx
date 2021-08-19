@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     [theme.breakpoints.up("md")]: {
       width: 420,
-      height: 380,
+      height: 320,
     },
   },
   articleTitle: {

@@ -2,12 +2,14 @@ export const Home = () => {
   return (
     <>
       <h2>HOME</h2>
-      <p className="commonBox txt1">
-        Thank you for
-        <br />
-        visiting my portfolio!
-      </p>
-      <div className="commonBox"></div>
+      <div className="commonBox txt1Box">
+        <p className="txt1">
+          Thank you for
+          <br />
+          visiting my portfolio!
+        </p>
+      </div>
+      <div className="commonBox imgBox"></div>
       <p className="commonBox txt2">
         ルファベットを使う国々には Lorem ipsum という伝統的なダミーテキストがある。
         <br />
