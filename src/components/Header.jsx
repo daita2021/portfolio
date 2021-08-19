@@ -8,7 +8,9 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     height: 40,
-    backgroundImage: "linear-gradient(65.5deg, #3dcaca -15%, #2d3077 60%)",
+    // backgroundImage: "linear-gradient(65.5deg, #3dcaca -15%, #2d3077 60%)",
+    background: "#222",
+    boxShadow: "0 1px 1px #222",
   },
 });
 

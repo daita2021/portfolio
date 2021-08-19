@@ -1,5 +1,6 @@
 #sidebar {
   position: fixed;
+  z-index: 9990;
   left: 0;
   bottom: 51px;
   width: 140px;
@@ -61,7 +62,7 @@ input[type="checkbox"] {
   background-color: #900;
   border-radius: 48%;
   box-shadow: 0 0 2px #aaa;
-  z-index: 100;
+  z-index: 9999;
   bottom: 280px;
   right: 0;
   width: 40px;

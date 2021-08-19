@@ -4,9 +4,9 @@ h1 {
   background: url(./images/logo_transparent.png) no-repeat left 3px / contain;
   letter-spacing: 1px;
   padding-left: 36px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
-  text-shadow: 0 0 1px #006;
+  text-shadow: 0 0 1px #fff;
 }
 
 h2 {
@@ -23,6 +23,15 @@ h2 {
 .commonBox {
   min-height: calc(100vh - 90px);
   padding: 10px;
+}
+.loadingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  position: fixed;
+  top: 42px;
+  width: 100%;
 }
 
 /* HOME テキスト */
@@ -48,7 +57,7 @@ h2 {
   text-shadow: 0 0 1px #000;
   font-weight: 300;
   font-size: 30px;
-  padding: 28vh 40px 0 40px;
+  padding: 22vh 40px 0 40px;
   background: #eee;
 }
 

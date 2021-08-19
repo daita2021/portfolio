@@ -14,6 +14,7 @@ import { Works } from "../containers/Works";
 const useStyles = makeStyles({
   root: {
     position: "fixed",
+    zIndex: 9999,
     bottom: 0,
     width: "100%",
     height: 50,
