@@ -17,8 +17,8 @@ export const About = () => {
             <textarea name="message" placeholder="Comment" required></textarea>
 
             <p className="formBtn">
-              <input type="submit" value="SUBMIT" />
               <input type="reset" value="RESET" />
+              <input type="submit" value="SUBMIT" />
             </p>
           </form>
         </div>
