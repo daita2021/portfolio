@@ -34,6 +34,10 @@ h2 {
   width: 100%;
 }
 
+.loadingBox p {
+  padding-left: 12px;
+}
+
 /* HOME テキスト */
 .txt1Box {
   background-color: #0f214e;

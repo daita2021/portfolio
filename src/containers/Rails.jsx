@@ -22,6 +22,7 @@ export const Rails = () => {
       {isloading ? (
         <div className="commonBox loadingBox">
           <CircularProgress />
+          <p>loading...</p>
         </div>
       ) : (
         <></>

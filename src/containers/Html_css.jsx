@@ -24,6 +24,7 @@ export const HtmlCss = () => {
       {isloading ? (
         <div className="commonBox loadingBox">
           <CircularProgress />
+          <p>loading...</p>
         </div>
       ) : (
         <></>

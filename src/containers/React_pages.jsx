@@ -23,6 +23,7 @@ export const ReactPage = () => {
       {isloading ? (
         <div className="commonBox loadingBox">
           <CircularProgress />
+          <p>loading...</p>
         </div>
       ) : (
         <></>
