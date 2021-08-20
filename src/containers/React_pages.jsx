@@ -1,7 +1,6 @@
 import { Article } from "../components/Article";
 import "./WorksPages.css";
 import React, { useState, useEffect } from "react";
-// import Loader from "react-loader-spinner";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 // images
@@ -24,7 +23,6 @@ export const ReactPage = () => {
       {isloading ? (
         <div className="commonBox loadingBox">
           <CircularProgress />
-          {/* <Loader type="ThreeDots" color="#007" height={60} width={60} loading={isloading} timeout={3000} /> */}
         </div>
       ) : (
         <></>
