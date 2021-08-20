@@ -22,7 +22,7 @@ export const ReactPage = () => {
       </h3>
       {isloading ? (
         <div className="commonBox loadingBox">
-          <Loader type="ThreeDots" color="#007" height={60} width={60} loading={isloading} />
+          <Loader type="ThreeDots" color="#007" height={60} width={60} loading={isloading} timeout={3000} />
         </div>
       ) : (
         <></>
