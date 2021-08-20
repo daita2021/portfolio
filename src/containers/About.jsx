@@ -8,7 +8,7 @@ export const About = () => {
       <div className="commonBox formWrapper">
         <h3 className="contact">Contact</h3>
         <div className="formBox">
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
             <input type="text" name="name" required placeholder="Name" />
 
