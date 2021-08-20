@@ -1,7 +1,7 @@
 import { Article } from "../components/Article";
 import "./WorksPages.css";
 import React, { useState, useEffect } from "react";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 // images
