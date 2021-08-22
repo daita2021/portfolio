@@ -14,7 +14,7 @@ dl {
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   color: #555;
 }
 dt {
@@ -29,6 +29,13 @@ dd {
   border-bottom: 1px solid #333;
   padding: 0 0 4px 8px;
   margin-bottom: 20px;
+}
+
+.aboutMe {
+  max-width: 560px;
+  line-height: 1.6;
+  margin: 0 auto 40px;
+  padding: 0 10px;
 }
 
 .formWrapper {

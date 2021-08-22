@@ -17,7 +17,7 @@ export const Home = () => {
             <img src={Illust} alt=""></img>
           </div>
           <div className="txt3 gItem2">
-            <p>このサイトは転職用ポートフォリオとして制作したものです。</p>
+            <p>このサイトは転職活動用のポートフォリオとして制作したものです。</p>
             <p>開発環境</p>
             <ul>
               <li>言語: HTML, CSS, JavaScript</li>

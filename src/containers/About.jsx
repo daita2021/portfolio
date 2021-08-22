@@ -16,6 +16,13 @@ export const About = () => {
           <dt>INTEREST</dt>
           <dd>React.js, JavaScript, Ruby, Rails, Docker, AWS</dd>
         </dl>
+        <p className="aboutMe">
+          現在Webエンジニアへの転職を目指して4月から池袋の職業訓練校でWebデザインとプログラミングの基礎を学んでいます。
+          <br />
+          訓練校では主にHTML,CSS,Jquery,Photoshopなどを中心にフロントに必要な基礎を学び、自宅ではReact,Railsなどのフレームワークを中心に学習しています。
+          <br />
+          難しい内容も多く思うように学習が進まない時もありますが、コツコツと楽しみながら取り組んで、様々な機能を実装できるエンジニアになりたいと思っています。
+        </p>
       </div>
       <div className="commonBox formWrapper">
         <h3 className="aboutH3">Contact</h3>
