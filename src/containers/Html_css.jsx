@@ -5,6 +5,9 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 // images
 import TestImg3 from "../images/test.jpg";
+import Art from "../images/art.jpg";
+import Cafe from "../images/cafe.jpg";
+import Fsl from "../images/fsl.jpg";
 
 export const HtmlCss = () => {
   const [isloading, setLoading] = useState(false);
@@ -30,9 +33,9 @@ export const HtmlCss = () => {
         <></>
       )}
       <div className="commonBox worksFlex">
-        <Article title="test" imgUrl={TestImg3} siteUrl="https://github.com/daita2021"></Article>
-        <Article title="test" imgUrl={TestImg3}></Article>
-        <Article title="test2" imgUrl={TestImg3}></Article>
+        <Article title="Ceramic Art" imgUrl={Art} siteUrl="http://portfoliotam.starfree.jp/0604-ceramic_art/" description="cssのみでハンバーガーメニューを実装したシンプルなレイアウトのサイトです。"></Article>
+        <Article title="Cafe site" imgUrl={Cafe} siteUrl="http://portfoliotam.starfree.jp/0618-singlepage/" description="個人経営のカフェがコンセプト。Jqueryを使用しスライダーやスムーススクロール等を実装しました。"></Article>
+        <Article title="Fullscreen&Grid site" imgUrl={Fsl} siteUrl="https://focused-shaw-4e2174.netlify.app/" description="フルスクリーンレイアウトとCSS Gridを練習した際のサイトです"></Article>
         <Article title="test3" imgUrl={TestImg3}></Article>
       </div>
     </>

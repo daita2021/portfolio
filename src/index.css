@@ -232,7 +232,8 @@ video {
 }
 ul,
 ol {
-  list-style: none;
+  list-style: square;
+  padding-left: 40px;
 }
 a {
   text-decoration: none;
@@ -248,7 +249,7 @@ img {
 
 body {
   padding: 40px 0 50px; /* header nav分 */
-  background: #f9f9f9;
+  background: #ececec;
   color: #111;
   font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;

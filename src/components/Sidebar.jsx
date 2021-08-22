@@ -1,4 +1,5 @@
 import "./Sidebar.css";
+import { ScrollToTop } from "./ScrollToTop";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { HtmlCss } from "../containers/Html_css";
 import { Js } from "../containers/Js";
@@ -38,15 +39,19 @@ export const Sidebar = () => {
 
       <Switch>
         <Route exact path="/works/htmlcss">
+          <ScrollToTop />
           <HtmlCss />
         </Route>
         <Route exact path="/works/js">
+          <ScrollToTop />
           <Js />
         </Route>
         <Route exact path="/works/react">
+          <ScrollToTop />
           <ReactPage />
         </Route>
         <Route exact path="/works/rails">
+          <ScrollToTop />
           <Rails />
         </Route>
       </Switch>

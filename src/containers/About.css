@@ -1,14 +1,38 @@
-.contact {
+.aboutH3 {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 70px;
+  margin-bottom: 20px;
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 36px;
-  color: #fff;
+  color: #666;
+  text-shadow: 0 0 1px #999;
+}
+
+dl {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+dt {
+  font-weight: bold;
+  width: 36%;
+}
+dd {
+  width: 64%;
+}
+dt,
+dd {
+  border-bottom: 1px solid #333;
+  padding: 0 0 4px 8px;
+  margin-bottom: 20px;
 }
 
 .formWrapper {
-  background: #091532;
+  background: #0f214e;
 }
 .formBox {
   display: flex;
@@ -29,8 +53,16 @@ textarea {
   margin: 20px auto;
   padding: 10px;
   display: block;
-  width: 300px;
+  width: 400px;
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  .formBox [type="text"],
+  [type="email"],
+  textarea {
+    width: 300px;
+  }
 }
 
 textarea {
@@ -39,7 +71,7 @@ textarea {
 
 .formBtn {
   width: 180px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   display: flex;
   justify-content: space-around;
   color: #fff;

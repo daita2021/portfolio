@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     "& img": {
       marginBottom: 10,
+      boxShadow: "0 0 1px #444",
     },
     "& p": {
       marginBottom: 2,
@@ -29,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   articleBox: {
     marginRight: 10,
     marginBottom: 10,
-    width: 300,
+    width: 280,
     height: 250,
     padding: 10,
     cursor: "pointer",
@@ -43,10 +44,11 @@ const useStyles = makeStyles((theme) => ({
   },
   articleImg: {
     width: 240,
-    height: 150,
+    height: 180,
+    boxShadow: "0 0 1px #444",
     [theme.breakpoints.up("md")]: {
       width: 360,
-      height: 220,
+      height: 270,
     },
   },
   btnWrapper: {

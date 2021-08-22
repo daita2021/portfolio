@@ -1,6 +1,6 @@
 #sidebar {
   position: fixed;
-  z-index: 9990;
+  z-index: 10;
   left: 0;
   bottom: 51px;
   width: 140px;
@@ -21,7 +21,6 @@
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .sidebarInner li a {
   padding-left: 38px;
   color: #fff;
@@ -29,7 +28,6 @@
   text-decoration: none;
   white-space: nowrap;
 }
-
 .sidebarInner li:nth-of-type(1) {
   background: url(../images/icon_html.svg) no-repeat 16px center/ 22px;
 }
@@ -45,11 +43,9 @@
 .sidebarInner li:nth-of-type(5) {
   background: url(../images/icon_school.png) no-repeat 13px center/ 24px;
 }
-
 input[type="checkbox"]:checked ~ #sidebar {
   transform: translateX(calc(100vw - 140px));
 }
-
 input[type="checkbox"] {
   box-sizing: border-box;
   display: none;
@@ -62,7 +58,7 @@ input[type="checkbox"] {
   background-color: #900;
   border-radius: 48%;
   box-shadow: 0 0 2px #aaa;
-  z-index: 9999;
+  z-index: 11;
   bottom: 280px;
   right: 0;
   width: 40px;
@@ -84,7 +80,6 @@ input[type="checkbox"] {
   position: relative;
   margin-top: 3px;
 }
-
 input[type="checkbox"]:checked ~ .sidebarToggle > .part-1 {
   transition: all 0.1s;
   width: 100%;
@@ -93,7 +88,6 @@ input[type="checkbox"]:checked ~ .sidebarToggle > .part-2 {
   transition: all 0.2s;
   width: 110%;
 }
-
 input[type="checkbox"]:checked ~ .sidebarToggle > .part-3 {
   transition: all 0.2s;
   width: 120%;
