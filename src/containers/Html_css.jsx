@@ -16,7 +16,7 @@ export const HtmlCss = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1200);
   }, []);
 
   return (
