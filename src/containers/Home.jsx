@@ -6,7 +6,7 @@ export const Home = () => {
       <h2>HOME</h2>
       <div className="snapBox">
         <div className="commonBox txt1Box snapItem">
-          <p className="txt1">
+          <p className="txt1 fadeIn">
             Thank you for
             <br />
             visiting my portfolio!
