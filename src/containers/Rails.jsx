@@ -3,14 +3,13 @@ import "./WorksPages.css";
 import React, { useState, useEffect } from "react";
 import CircularProgress from "@material-ui/core/CircularProgress";
 // images
-import TestImg3 from "../images/test.jpg";
+import TestImg from "../images/test.jpg";
 import Rails01 from "../images/rails.jpg";
 
 export const Rails = () => {
-  const [isloading, setLoading] = useState(false);
+  const [isloading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1200);
@@ -30,9 +29,9 @@ export const Rails = () => {
       )}
       <div className="commonBox worksFlex">
         <Article title="Rails App" imgUrl={Rails01} siteUrl="https://benefique-mandarine-19660.herokuapp.com/" description="Rails Tutorialに沿って作っている簡易版twitterアプリです。ログイン機能の実装が終わり現在11章まで進んでいます"></Article>
-        <Article title="test" imgUrl={TestImg3}></Article>
-        <Article title="test2" imgUrl={TestImg3}></Article>
-        <Article title="test3" imgUrl={TestImg3}></Article>
+        <Article title="test" imgUrl={TestImg}></Article>
+        <Article title="test2" imgUrl={TestImg}></Article>
+        <Article title="test3" imgUrl={TestImg}></Article>
       </div>
     </>
   );
