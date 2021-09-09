@@ -10,14 +10,14 @@ export const About = () => {
           <dt>NICKNAME</dt>
           <dd>DAITA</dd>
           <dt>HOMETOWN</dt>
-          <dd>青森県</dd>
+          <dd>青森県弘前市</dd>
           <dt>HOBBY</dt>
           <dd>料理、映画鑑賞、テニス</dd>
           <dt>INTEREST</dt>
           <dd>React.js, JavaScript, Ruby, Rails, Docker, AWS</dd>
         </dl>
         <p className="aboutMe">
-          現在Webエンジニアへの転職を目指して4月から池袋の職業訓練校でWebデザインとプログラミングの基礎を学んでいます。
+          現在ITエンジニアへの転職を目指して4月から池袋の職業訓練校でWebデザインとプログラミングの基礎を学んでいます。
           <br />
           訓練校では主にHTML,CSS,Jquery,Photoshopなどを中心にフロントに必要な基礎を学び、自宅ではReact,Railsなどのフレームワークを中心に学習しています。
           <br />
