@@ -63,7 +63,7 @@ h2 {
 /* スナップ */
 .snapBox {
   overflow-x: auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height: calc(100vh - 90px);
 }
 
