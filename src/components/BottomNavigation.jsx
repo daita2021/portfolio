@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+import { ScrollToTop } from "./ScrollToTop";
 import HomeIcon from "@material-ui/icons/Home";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -49,6 +50,7 @@ export default function SimpleBottomNavigation() {
           <Works />
         </Route>
         <Route exact path="/about">
+          <ScrollToTop />
           <About />
         </Route>
         <Route exact path="/">
