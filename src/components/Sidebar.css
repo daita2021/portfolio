@@ -29,16 +29,16 @@
   white-space: nowrap;
 }
 .sidebarInner li:nth-of-type(1) {
-  background: url(../images/icon_html.svg) no-repeat 16px center/ 22px;
+  background: url(../images/icons-html.png) no-repeat 11px center/ 30px;
 }
 .sidebarInner li:nth-of-type(2) {
-  background: url(../images/icon_js.svg) no-repeat 12px 10px / 28px;
+  background: url(../images/icons-js.png) no-repeat 10px 8px / 30px;
 }
 .sidebarInner li:nth-of-type(3) {
-  background: url(../images/icon_react.svg) no-repeat 10px center/ 30px;
+  background: url(../images/icons-react.png) no-repeat 10px center/ 30px;
 }
 .sidebarInner li:nth-of-type(4) {
-  background: url(../images/icon_rails.svg) no-repeat 8px center/ 34px;
+  background: url(../images/icons-rails.png) no-repeat 9px center/ 34px;
 }
 .sidebarInner li:nth-of-type(5) {
   background: url(../images/icon_school.png) no-repeat 13px center/ 24px;
