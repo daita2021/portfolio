@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     // backgroundImage: "linear-gradient(65.5deg, #3dcaca -15%, #2d3077 60%)",
     background: "#222",
     boxShadow: "0 1px 1px #222",
+    zIndex: 8000,
   },
 });
 
