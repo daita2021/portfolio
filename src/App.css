@@ -15,6 +15,7 @@ h2 {
   font-size: 22px;
   font-weight: 400;
   padding: 12px 2px 0;
+  z-index: 8001;
 }
 
 /* 共通box */
