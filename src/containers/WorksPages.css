@@ -1,3 +1,55 @@
+.loadingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ececec;
+  position: fixed;
+  top: 42px;
+  width: 100%;
+}
+
+.loading-bar {
+  display: inline-block;
+  margin-left: 6px;
+  width: 6px;
+  height: 22px;
+  border-radius: 4px;
+  animation: loading 1s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(1) {
+  background-color: #222831;
+  animation-delay: 0;
+}
+.loading-bar:nth-child(2) {
+  background-color: #393e46;
+  animation-delay: 0.05s;
+}
+.loading-bar:nth-child(3) {
+  background-color: #00adb5;
+  animation-delay: 0.1s;
+}
+.loading-bar:nth-child(4) {
+  background-color: #006;
+  animation-delay: 0.15s;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1, 2.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.loadingBox p {
+  padding-left: 12px;
+}
+
 .worksTitle {
   display: inline-block;
   color: #fff;

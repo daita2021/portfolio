@@ -23,26 +23,34 @@ h2 {
   padding: 10px;
 }
 
-.loadingBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ececec;
-  position: fixed;
-  top: 42px;
-  width: 100%;
-}
-
-.loadingBox p {
-  padding-left: 12px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: #fff;
+  position: relative;
 }
+.grid:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: -1px;
+  left: 0;
+  background-color: #0f214e;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.grid:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -49px;
+  left: 0;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
 .gItem1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -52,6 +60,13 @@ h2 {
   grid-row: 2 / 3;
 }
 @media (max-width: 700px) {
+  .grid:before {
+    height: 30px;
+  }
+  .grid:after {
+    height: 30px;
+    bottom: -29px;
+  }
   .gItem1 {
     grid-column: 1 / 3;
   }
@@ -63,7 +78,7 @@ h2 {
 /* スナップ */
 .snapBox {
   overflow-x: auto;
-  scroll-snap-type: y;
+  scroll-snap-type: y mandatory;
   height: calc(100vh - 90px);
 }
 
@@ -71,10 +86,44 @@ h2 {
   scroll-snap-align: start;
 }
 
+/* wave */
+/* .wave {
+  position: absolute;
+  height: 52px;
+  width: 100%;
+  background: #0f214e;
+  bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.wave::before {
+  width: 51%;
+  height: 7%;
+  background-color: #fff;
+  right: calc(-1% + 1px);
+  top: 97%;
+  border-radius: 100% 90%;
+}
+.wave::after {
+  width: 52%;
+  height: 6%;
+  background-color: #0f214e;
+  left: -1%;
+  top: calc(97% - 4px);
+  border-radius: 100% 91%;
+} */
+
 /* HOME テキスト */
 .txt1Box {
   background-color: #0f214e;
 }
+
 .txt1 {
   text-align: center;
   font-size: 56px;
@@ -87,6 +136,7 @@ h2 {
   background-size: cover;
   background-clip: text;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .txt2 {
@@ -94,7 +144,7 @@ h2 {
   margin: 0 auto;
   font-weight: 300;
   font-size: 30px;
-  padding: 14vh 40px 0 40px;
+  padding: 12vh 40px 0 40px;
   background: #ececec;
   color: #333;
 }
@@ -139,7 +189,7 @@ h2 {
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
 }
 
 @keyframes fadeIn {

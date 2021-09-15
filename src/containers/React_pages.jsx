@@ -1,7 +1,7 @@
 import { Article } from "../components/Article";
 import "./WorksPages.css";
 import React, { useState, useEffect } from "react";
-import CircularProgress from "@material-ui/core/CircularProgress";
+// import CircularProgress from "@material-ui/core/CircularProgress";
 
 // images
 import TestImg from "../images/test.jpg";
@@ -24,7 +24,13 @@ export const ReactPage = () => {
       </h3>
       {isloading ? (
         <div className="commonBox loadingBox">
-          <CircularProgress />
+          <div class="loading">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+          </div>
+          {/* <CircularProgress /> */}
           <p>loading...</p>
         </div>
       ) : (
