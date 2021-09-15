@@ -58,8 +58,8 @@ input[type="checkbox"] {
   background-color: #900;
   border-radius: 48%;
   box-shadow: 0 0 2px #aaa;
-  z-index: 11;
-  bottom: 280px;
+  z-index: 9001;
+  bottom: 278px;
   right: 0;
   width: 40px;
 }
