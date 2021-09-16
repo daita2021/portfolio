@@ -21,11 +21,11 @@ export const Rails = () => {
       </h3>
       {isloading ? (
         <div className="commonBox loadingBox">
-          <div class="loading">
-            <div class="loading-bar"></div>
-            <div class="loading-bar"></div>
-            <div class="loading-bar"></div>
-            <div class="loading-bar"></div>
+          <div className="loading">
+            <div className="loading-bar"></div>
+            <div className="loading-bar"></div>
+            <div className="loading-bar"></div>
+            <div className="loading-bar"></div>
           </div>
           {/* <CircularProgress /> */}
           <p>loading...</p>

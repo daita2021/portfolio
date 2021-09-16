@@ -3,7 +3,7 @@ import Illust from "../images/illust01.jpg";
 export const Home = () => {
   return (
     <>
-      <h2>HOME</h2>
+      <h2 className="pageTitle">HOME</h2>
       <div className="snapBox">
         <div className="commonBox txt1Box snapItem">
           <p className="txt1 fadeIn">
@@ -12,7 +12,7 @@ export const Home = () => {
             visiting my portfolio!
           </p>
         </div>
-        {/*  */}
+        {/* アニメ用要素 */}
         <div className="animeArea">
           <div className="squares">
             <span></span>
