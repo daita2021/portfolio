@@ -12,6 +12,22 @@ export const Home = () => {
             visiting my portfolio!
           </p>
         </div>
+        {/*  */}
+        <div className="animeArea">
+          <div className="squares">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        {/*  */}
         <div className="commonBox snapItem grid">
           <div className="gItem1">
             <img src={Illust} alt=""></img>
