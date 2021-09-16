@@ -203,7 +203,7 @@ h2 {
   border: 1px solid #fff;
   opacity: 0.2;
   animation: toTop 20s linear infinite;
-  bottom: -100px;
+  bottom: -150px;
   border-radius: 4px;
 }
 
