@@ -14,6 +14,7 @@ export const Home = () => {
         </div>
         {/* アニメ用要素 */}
         <div className="animeArea">
+          <span className="scrollDown"></span>
           <div className="squares">
             <span></span>
             <span></span>
