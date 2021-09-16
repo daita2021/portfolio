@@ -31,9 +31,9 @@ export const Home = () => {
         {/*  */}
         <div className="commonBox snapItem grid">
           <div className="gItem1">
-            <img src={Illust} alt=""></img>
+            <img src={Illust} alt="ホーム画面イラスト"></img>
           </div>
-          <div className="txt3 gItem2">
+          <div className="txt2 gItem2">
             <p>このサイトは転職活動用のポートフォリオとして制作したものです。</p>
             <p>開発環境</p>
             <ul>
@@ -48,7 +48,7 @@ export const Home = () => {
             </ul>
           </div>
         </div>
-        <div className="commonBox snapItem txt2">
+        <div className="commonBox snapItem txt3">
           <h3>サイト案内</h3>
           <p>
             下部メニューバーから作品ページ、アバウトページ(プロフィール、コンタクトフォーム)、GitHub(外部リンク)に進むことができます。

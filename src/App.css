@@ -110,7 +110,7 @@ h1 {
   opacity: 1;
 }
 
-.txt2 {
+.txt3 {
   max-width: 960px;
   margin: 0 auto;
   font-weight: 300;
@@ -120,26 +120,32 @@ h1 {
   color: #333;
 }
 
-.txt2 h3 {
+.txt3 h3 {
   border-bottom: 2px solid #999;
   margin-bottom: 1em;
+  padding: 0 20px;
 }
-.txt2 p {
+.txt3 p {
   font-size: 20px;
+  padding: 0 1em;
+  line-height: 1.8;
 }
 
-.txt3 {
+.txt2 {
   font-size: 18px;
 }
-.txt3 p:first-child {
+.txt2 p:first-child {
   margin-bottom: 16px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 550px) and (max-width: 767px) {
   .txt1 {
     font-size: 44px;
   }
   .txt2 {
+    padding: 0 16px;
+  }
+  .txt3 {
     font-size: 24px;
   }
 }
@@ -147,13 +153,13 @@ h1 {
   .txt1 {
     font-size: 34px;
   }
-  .txt2 {
+  .txt3 {
     font-size: 20px;
   }
-  .txt2 p {
+  .txt3 p {
     font-size: 18px;
   }
-  .txt3 {
+  .txt2 {
     font-size: 16px;
   }
 }
