@@ -33,22 +33,24 @@ export const Home = () => {
           <div className="gItem1">
             <img src={Illust} alt="ホーム画面イラスト"></img>
           </div>
-          <div className="txt2 gItem2">
-            <p>このサイトは転職活動用のポートフォリオとして制作したものです。</p>
-            <p>開発環境</p>
-            <ul>
-              <li>言語: HTML, CSS, JavaScript</li>
-              <li>ライブラリ: React(create-react-app), Material-UI等</li>
-              <li>インフラ: Netlify</li>
-              <li>その他: Git, VScode, Prettier, Photoshop</li>
-            </ul>
-            <p>使用素材サイト</p>
-            <ul>
-              <li>O-DAN(オーダン), Hatchful, unDraw</li>
-            </ul>
+          <div className="txt2Box gItem2">
+            <div>
+              <p>このサイトは転職活動用のポートフォリオとして制作したものです。</p>
+              <p>開発環境</p>
+              <ul>
+                <li>言語: HTML, CSS, JavaScript</li>
+                <li>ライブラリ: React(create-react-app), Material-UI等</li>
+                <li>インフラ: Netlify</li>
+                <li>その他: Git, VScode, Prettier, Photoshop</li>
+              </ul>
+              <p>使用素材サイト</p>
+              <ul>
+                <li>O-DAN(オーダン), Hatchful, unDraw</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="commonBox snapItem txt3">
+        <div className="commonBox snapItem txt3Box">
           <h3>サイト案内</h3>
           <p>
             下部メニューバーから作品ページ、アバウトページ(プロフィール、コンタクトフォーム)、GitHub(外部リンク)に進むことができます。
