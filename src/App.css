@@ -84,15 +84,15 @@ h1 {
 
 /* スナップ */
 .snapBox {
-  overflow-x: auto;
+  /* overflow-x: auto;
   scroll-snap-type: y;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 90px); */
   position: relative;
 }
 
-.snapItem {
+/* .snapItem {
   scroll-snap-align: start;
-}
+} */
 
 /* HOME テキスト */
 .txt1Box {
@@ -119,7 +119,7 @@ h1 {
   margin: 0 auto;
   font-weight: 300;
   font-size: 30px;
-  padding: 12vh 40px 0 40px;
+  padding: 12vh 30px 30px;
   background: #ececec;
   color: #333;
 }
@@ -137,6 +137,7 @@ h1 {
 
 .txt2Box {
   font-size: 18px;
+  padding: 0 0 20px;
 }
 .txt2Box p:first-child {
   margin-bottom: 16px;
