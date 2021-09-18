@@ -273,7 +273,6 @@ h1 {
   left: 10%;
   width: 20px;
   height: 20px;
-  animation: toTopRight linear infinite;
   animation-delay: 3s;
   animation-duration: 13s;
 }
@@ -289,7 +288,6 @@ h1 {
   left: 30%;
   width: 60px;
   height: 60px;
-  animation: toTopLeft linear infinite;
   animation-delay: 0s;
   animation-duration: 17s;
 }
@@ -336,7 +334,6 @@ h1 {
   left: 85%;
   width: 150px;
   height: 150px;
-  animation: toTopLeft linear infinite;
   animation-delay: 0s;
   animation-duration: 18s;
 }
@@ -352,28 +349,6 @@ h1 {
   }
   100% {
     transform: translateY(-1000px) rotate(720deg);
-    opacity: 0;
-  }
-}
-
-@keyframes toTopRight {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(500px, -1000px) rotate(720deg);
-    opacity: 0;
-  }
-}
-
-@keyframes toTopLeft {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-400px, -1000px) rotate(720deg);
     opacity: 0;
   }
 }
