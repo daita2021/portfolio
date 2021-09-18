@@ -54,6 +54,9 @@ const useStyles = makeStyles((theme) => ({
   btnWrapper: {
     display: "flex",
     justifyContent: "flex-end",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "left",
+    },
   },
 }));
 

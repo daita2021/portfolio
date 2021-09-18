@@ -1,7 +1,6 @@
 import { Article } from "../components/Article";
 import "./WorksPages.css";
 import React, { useState, useEffect } from "react";
-// import CircularProgress from "@material-ui/core/CircularProgress";
 
 // images
 import TestImg from "../images/test.jpg";
@@ -30,16 +29,15 @@ export const ReactPage = () => {
             <div className="loading-bar"></div>
             <div className="loading-bar"></div>
           </div>
-          {/* <CircularProgress /> */}
           <p>loading...</p>
         </div>
       ) : (
         <></>
       )}
       <div className="commonBox worksFlex">
-        <Article title="OXゲーム" imgUrl={Ox} siteUrl="http://portfoliotam.starfree.jp/react-tutorial/" description="公式のReact Tutorialに沿って作ったOXゲームです"></Article>
-        <Article title="犬画像ギャラリー" imgUrl={Dog} siteUrl="http://portfoliotam.starfree.jp/react-practice/" description="Zenn React Tutorialに沿って作った犬画像ギャラリーです"></Article>
-        <Article title="Portfolio" imgUrl={Portfolio} description="現在表示しているサイトです"></Article>
+        <Article title="OXゲーム" imgUrl={Ox} siteUrl="http://portfoliotam.starfree.jp/react-tutorial/" description="公式のReact Tutorialに沿って作ったOXゲームです。"></Article>
+        <Article title="犬画像ギャラリー" imgUrl={Dog} siteUrl="http://portfoliotam.starfree.jp/react-practice/" description="Zenn React Tutorialに沿って作った犬画像ギャラリーです。"></Article>
+        <Article title="Portfolio" imgUrl={Portfolio} description="現在表示しているサイトです。"></Article>
         <Article title="test3" imgUrl={TestImg}></Article>
       </div>
     </>
