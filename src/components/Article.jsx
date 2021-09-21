@@ -60,12 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Article = (props) => {
-  const title = props.title;
-  const description = props.description;
-  const imgUrl = props.imgUrl;
-  const siteUrl = props.siteUrl;
-
+export const Article = ({ title, description, imgUrl, siteUrl }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 

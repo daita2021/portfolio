@@ -1,3 +1,5 @@
+import "./Home.css";
+
 import Illust from "../images/illust01.jpg";
 
 export const Home = () => {
