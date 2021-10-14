@@ -46,7 +46,7 @@ export default function SimpleBottomNavigation() {
       </BottomNavigation>
 
       <Switch>
-        <Route exact path="/works/js">
+        <Route exact path="/works/htmlcss">
           <Works />
         </Route>
         <Route exact path="/about">
